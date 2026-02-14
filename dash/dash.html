@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Tech Mahindra | Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- css -->
+  <link rel="stylesheet" href="dash.css">
+</head>
+
+<body>
+
+  <!-- barra superior -->
+  <header class="top">
+    <div class="left">
+      <div class="logo"></div>
+      <div class="name">
+        <p class="brand">Tech Mahindra</p>
+        <p class="sub">Project Hub</p>
+      </div>
+    </div>
+
+    <div class="right">
+      <input class="search" type="text" placeholder="Search project...">
+      <div class="user">GL</div>
+    </div>
+  </header>
+
+  <!-- layout -->
+  <div class="wrap">
+
+    <!-- menu -->
+    <aside class="side">
+      <a class="item on" href="#">Dashboard</a>
+      <a class="item" href="#">Projects</a>
+      <a class="item" href="#">Tasks</a>
+      <a class="item" href="#">Budget</a>
+      <a class="item" href="#">Reports</a>
+      <a class="item" href="#">Team</a>
+
+      <div class="line"></div>
+
+      <a class="item" href="#">Settings</a>
+      <a class="item" href="#">Help</a>
+    </aside>
+
+    <!-- contenido -->
+    <main class="main">
+
+      <!-- titulo -->
+      <section class="head">
+        <div>
+          <h1 class="title">Dashboard</h1>
+          <p class="hint"> gestion de proyectos y avances</p>
+        </div>
+
+        <div class="actions">
+          <button class="btn">New</button>
+        </div>
+      </section>
+
+      <!-- resumen -->
+      <section class="grid">
+
+        <!-- kpi -->
+        <div class="card">
+          <p class="kpi">Active </p>
+          <p class="num">6</p>
+          <p class="mini">2  new </p>
+        </div>
+
+        <!-- kpi -->
+        <div class="card">
+          <p class="kpi">open</p>
+          <p class="num">24</p>
+          <p class="mini">7 reviewed</p>
+        </div>
+
+        <!-- kpi -->
+        <div class="card">
+          <p class="kpi">On track</p>
+          <p class="num">4</p>
+          <p class="mini">2  help!</p>
+        </div>
+
+        <!-- alertas -->
+        <div class="card">
+          <p class="kpi">Alerts</p>
+
+          <!-- lista -->
+          <div class="list">
+            <div class="row">
+              <span class="dot g"></span>
+              <div class="txt">
+                <p class="t1">Client </p>
+                <p class="t2">limit in 10 days</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <span class="dot y"></span>
+              <div class="txt">
+                <p class="t1">Mobile</p>
+                <p class="t2">limit in 3 days</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <span class="dot r"></span>
+              <div class="txt">
+                <p class="t1">Infra migration</p>
+                <p class="t2">Past 2 days</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- proyectos + deadlines -->
+      <section class="split">
+
+        <!-- tabla proyectos -->
+        <div class="card">
+          <div class="bar">
+            <p class="sec">Projects</p>
+            <a class="link" href="#">View all</a>
+          </div>
+
+          <!-- tabla -->
+          <div class="table">
+
+            <!-- fila -->
+            <div class="tr th">
+              <div>Project</div>
+              <div>Status</div>
+              <div>Progress</div>
+              <div>Deadline</div>
+            </div>
+
+            <!-- fila -->
+            <div class="tr">
+              <div class="pname">Client Portal Revamp</div>
+              <div><span class="tag ok">On track</span></div>
+              <div>
+                <div class="prog">
+                  <div class="fill" style="width:67%"></div>
+                </div>
+                <span class="pct">67%</span>
+              </div>
+              <div class="date">10 feb</div>
+            </div>
+
+            <!-- fila -->
+            <div class="tr">
+              <div class="pname">Oxxo Training Sim</div>
+              <div><span class="tag mid">At risk</span></div>
+              <div>
+                <div class="prog">
+                  <div class="fill" style="width:46%"></div>
+                </div>
+                <span class="pct">46%</span>
+              </div>
+              <div class="date">Mar 05</div>
+            </div>
+
+            <!-- fila -->
+            <div class="tr">
+              <div class="pname">Data Pipeline</div>
+              <div><span class="tag ok">On track</span></div>
+              <div>
+                <div class="prog">
+                  <div class="fill" style="width:58%"></div>
+                </div>
+                <span class="pct">58%</span>
+              </div>
+              <div class="date">Mar 27</div>
+            </div>
+
+            <!-- fila -->
+            <div class="tr">
+              <div class="pname">Infra Migration</div>
+              <div><span class="tag bad">Overdue</span></div>
+              <div>
+                <div class="prog">
+                  <div class="fill" style="width:84%"></div>
+                </div>
+                <span class="pct">84%</span>
+              </div>
+              <div class="date">Feb 20</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- panel deadlines -->
+        <div class="card">
+          <div class="bar">
+            <p class="sec">Deadlines</p>
+            <a class="link" href="#">Calendar</a>
+          </div>
+
+          <!-- items -->
+          <div class="dead">
+
+            <div class="drow">
+              <span class="dot r"></span>
+              <div class="txt">
+                <p class="t1">Infra Migration</p>
+                <p class="t2">Overdue · Feb 20</p>
+              </div>
+              <span class="pill">urgent</span>
+            </div>
+
+            <div class="drow">
+              <span class="dot y"></span>
+              <div class="txt">
+                <p class="t1">Mobile app QA</p>
+                <p class="t2">3 days left · Mar 03</p>
+              </div>
+              <span class="pill">soon</span>
+            </div>
+
+            <div class="drow">
+              <span class="dot g"></span>
+              <div class="txt">
+                <p class="t1">Client portal</p>
+                <p class="t2">10 days left · Mar 18</p>
+              </div>
+              <span class="pill">ok</span>
+            </div>
+
+            <div class="drow">
+              <span class="dot g"></span>
+              <div class="txt">
+                <p class="t1">Data Pipeline</p>
+                <p class="t2">17 days left · Mar 27</p>
+              </div>
+              <span class="pill">ok</span>
+            </div>
+
+          </div>
+
+          <!-- nota -->
+          <p class="note">Semáforo: verde ok · amarillo riesgo · rojo urgente</p>
+        </div>
+
+      </section>
+
+    </main>
+  </div>
+
+</body>
+</html>
