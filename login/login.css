@@ -1,133 +1,58 @@
 :root{
-  --red:#e2231a;      /* Tech Mahindra */
-  --black:#111111;    /* principal */
-  --gray:#6f6f6f;     /* secundario */
-  --line:#dddddd;     /* bordes */
-  --bg:#ffffff;       /* fondo */
+  --red:#d71920;
+  --line:#e5e7eb;
 }
 
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
-
-/*  base  */
 body{
-  font-family:-apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
-  background:var(--bg);
-  color:var(--black);
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  background:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
 }
 
-/* layout  */
-.wrap{
-  min-height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+.container{
+  width:100%;
+  max-width:400px;
 }
 
 .card{
-  width:360px;
   border:1px solid var(--line);
-  padding:32px 28px;
-  background:white;
-}
-
-/*  header  */
-.top{
-  margin-bottom:24px;
-}
-
-.brand{
-  font-size:13px;
-  color:var(--red);
-  font-weight:600;
-  letter-spacing:.4px;
+  border-radius:16px;
+  padding:30px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
 }
 
 .title{
+  margin:0;
   font-size:22px;
-  font-weight:600;
-  margin-top:6px;
 }
 
-.form{
-  display:flex;
-  flex-direction:column;
-  gap:16px;
-}
-
-.row{
-  display:flex;
-  flex-direction:column;
-  gap:6px;
-}
-
-.label{
-  font-size:13px;
-  color:var(--gray);
-}
-
-.input{
-  padding:10px;
+.subtitle{
+  margin:5px 0 20px;
   font-size:14px;
-  border:1px solid var(--line);
-  outline:none;
+  color:#666;
 }
 
-.input:focus{
-  border-color:var(--red);
-}
-
-.options{
+form{
   display:flex;
-  justify-content:space-between;
-  align-items:center;
-  font-size:13px;
+  flex-direction:column;
 }
 
-.check{
-  display:flex;
-  gap:6px;
-  color:var(--gray);
-}
-
-.link{
-  color:var(--red);
-  text-decoration:none;
-}
-
-.link:hover{
-  text-decoration:underline;
-}
-
-.btn{
-  margin-top:8px;
+input{
   padding:12px;
+  margin-bottom:12px;
+  border-radius:10px;
+  border:1px solid var(--line);
+}
+
+.primary{
   background:var(--red);
   color:white;
   border:none;
-  font-size:14px;
-  font-weight:600;
+  padding:12px;
+  border-radius:10px;
   cursor:pointer;
-}
-
-.btn:hover{
-  opacity:.9;
-}
-
-.note{
-  margin-top:18px;
-  font-size:12px;
-  color:var(--gray);
-  text-align:center;
-}
-
-.foot{
-  margin-top:14px;
-  display:flex;
-  justify-content:center;
-  gap:14px;
-  font-size:12px;
 }
